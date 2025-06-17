@@ -1,135 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Matcom Guard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            margin: 40px auto;
-            max-width: 500px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 32px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #2d3e50;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 28px;
-            margin: 10px 8px;
-            font-size: 16px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.2s, color 0.2s;
-        }
-
-        .btn-scan {
-            background: #007bff;
-            color: #fff;
-        }
-
-        .btn-scan:hover {
-            background: #0056b3;
-        }
-
-        .btn-monitor {
-            background: #28a745;
-            color: #fff;
-        }
-
-        .btn-monitor:hover {
-            background: #1e7e34;
-        }
-
-        .btn-stop {
-            background: #dc3545;
-            color: #fff;
-        }
-
-        .btn-stop:hover {
-            background: #a71d2a;
-        }
-
-        .btn-events {
-            background: #ffc107;
-            color: #212529;
-        }
-
-        .btn-events:hover {
-            background: #e0a800;
-        }
-
-        #eventos {
-            margin-top: 30px;
-            background: #f8f9fa;
-            border-radius: 6px;
-            padding: 16px;
-            min-height: 60px;
-            font-size: 15px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcom Web Guard</title>
+    <link rel="stylesheet" href="candela.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Matcom Guard</h1>
-        <button class="btn btn-scan" id="btnScan">Escaneo Profundo</button>
-        <button class="btn btn-monitor" id="btnMonitor">Iniciar Monitoreo</button>
-        <button class="btn btn-stop" id="btnStop">Detener Monitoreo</button>
-        <button class="btn btn-events" id="btnEvents">Ver Eventos</button>
-        <div id="eventos"></div>
-    </div>
+    <button class="button1" onclick="candela()">Guard</button>
+    
+    <button class="button2" onclick="Candelita()">Scan</button>
     <script>
-        let monitoring = false;
-
-        function updateBtn() {
-            btnMonitor.textContent = monitoring ? "Monitoreo activo" : "Iniciar Monitoreo";
+        function candela() {
+            fetch('http://localhost:5000/main')
+                .then(response => response.text())
+                .then(data => alert(data))
+                .catch(err => alert('Error: ' + err));
         }
-
-        const btnMonitor = document.getElementById('btnMonitor');
-        btnMonitor.onclick = () => {
-            fetch('http://localhost:5000/api/monitor/', { method: 'POST' })
-                .then(r => r.json()).then(d => { monitoring = d.running; updateBtn(); });
-        };
-
-        fetch('http://localhost:5000/api/monitor/')
-            .then(r => r.json()).then(d => { monitoring = d.running; updateBtn(); });
-
-        document.getElementById('btnScan').onclick = function () {
-            this.disabled = true;
-            fetch('http://localhost:5000/api/scan/')
-                .then(r => r.text()).then(t => alert(t)).finally(() => this.disabled = false);
-        };
-
-        document.getElementById('btnStop').onclick = function () {
-            // No hay endpoint para detener, solo muestra mensaje
-            alert("Para detener el monitoreo, cierre la ventana de la consola manualmente.");
-        };
-
-        document.getElementById('btnEvents').onclick = function () {
-            fetch('http://localhost:5000/api/events/')
-                .then(r => r.json())
-                .then(evts => {
-                    let html = "<b>Eventos recientes:</b><br>";
-                    if (evts.length === 0) html += "<i>No hay eventos.</i>";
-                    else html += evts.map(e => `<div>${e}</div>`).join('');
-                    document.getElementById('eventos').innerHTML = html;
-                });
-        };
+        function Candelita(){
+            fetch('http://localhost:5000/scan')
+                .then(response => response.text())
+                .then(data => alert(data))
+                .catch(err => alert('Error: ' + err));
+        }
     </script>
 </body>
 

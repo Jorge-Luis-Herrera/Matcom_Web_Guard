@@ -1,36 +1,4 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background: #f8fafc;
-}
-
-.c {
+.button1{
+    color: black;
     text-align: center;
-}
-
-button {
-    margin: 8px;
-    padding: 10px 18px;
-    background: #2563eb;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-button:hover:enabled {
-    background: #1d4ed8;
-}
-button:disabled {
-    background: #94a3b8;
-    cursor: not-allowed;
-}
-h2 {
-    color: #0f172a;
-    margin-bottom: 24px;
-    font-family: 'Segoe UI', Arial, sans-serif;
 }

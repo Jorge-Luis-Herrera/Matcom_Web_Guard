@@ -1,0 +1,7 @@
+//#dentro de la carpeta jorge está el Frontend y el Backend ,primero corren el servidor Backend ,luego abren el Frontend con Live_Server
+//y desde el Frontend se llaman a las distintas funciones del sistema 
+
+//#Deben tener instalado el compilador de C y C++ ,preferiblemente GCC o MinGw
+
+//#Deben tener instalado Dotnet el SDK y el Runtime
+

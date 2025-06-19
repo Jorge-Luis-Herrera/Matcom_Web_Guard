@@ -27,3 +27,18 @@ C:\D\School Projects\Matcom Guard\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.
 C:\D\School Projects\Matcom Guard\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.pdb
 C:\D\School Projects\Matcom Guard\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.genruntimeconfig.cache
 C:\D\School Projects\Matcom Guard\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\ref\Backend.dll
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\bin\Debug\net9.0\Backend.exe
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\bin\Debug\net9.0\Backend.deps.json
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\bin\Debug\net9.0\Backend.runtimeconfig.json
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\bin\Debug\net9.0\Backend.dll
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\bin\Debug\net9.0\Backend.pdb
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.AssemblyInfoInputs.cache
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.AssemblyInfo.cs
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.csproj.CoreCompileInputs.cache
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.sourcelink.json
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.dll
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\refint\Backend.dll
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.pdb
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\Backend.genruntimeconfig.cache
+C:\Cosas Leo\Escuela\SO\evaluaciones\proyecto\Matcom_Web_Guard\Jorge\Backend\obj\Debug\net9.0\ref\Backend.dll

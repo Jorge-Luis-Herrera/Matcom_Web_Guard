@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jorge\\.nuget\\packages\\": {}
+    "C:\\Users\\Informatica\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\D\\School Projects\\Matcom Guard\\Matcom_Web_Guard\\Jorge\\Backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Cosas Leo\\Escuela\\SO\\evaluaciones\\proyecto\\Matcom_Web_Guard\\Jorge\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "C:\\D\\School Projects\\Matcom Guard\\Matcom_Web_Guard\\Jorge\\Backend\\Backend.csproj",
-      "packagesPath": "C:\\Users\\Jorge\\.nuget\\packages\\",
-      "outputPath": "C:\\D\\School Projects\\Matcom Guard\\Matcom_Web_Guard\\Jorge\\Backend\\obj\\",
+      "projectPath": "C:\\Cosas Leo\\Escuela\\SO\\evaluaciones\\proyecto\\Matcom_Web_Guard\\Jorge\\Backend\\Backend.csproj",
+      "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
+      "outputPath": "C:\\Cosas Leo\\Escuela\\SO\\evaluaciones\\proyecto\\Matcom_Web_Guard\\Jorge\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jorge\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -44,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

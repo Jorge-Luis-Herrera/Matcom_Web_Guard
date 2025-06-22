@@ -55,9 +55,9 @@ int custom_printf(const char* format, ...) {
 // Redefinir printf ANTES de incluir los archivos de Jorge, Fabian y Leo
 #define printf custom_printf
 
-#include "../Jorge/C_Programs/Port_Scanner.c"
-#include "../Fabian/SO.c"
-#include "../Leo/main.c"
+#include "../USBs_Scanner/C_Programs/Port_Scanner.c"
+#include "../Memory_Management/SO.c"
+#include "../Network_Inspector/main.c"
 
 // Restaurar printf original después de los includes
 #undef printf

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-int main()
+int f()
 {
     // Simulación de virus: consumo de CPU y RAM
     size_t tam = 10 * 1024 * 1024; // 10 MB

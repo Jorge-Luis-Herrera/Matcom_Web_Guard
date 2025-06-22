@@ -163,7 +163,7 @@ SIZE_T obtenerMemoriaTotal() {
     return 0;
 }
 
-int main() {
+int f() {
     printf("Guardian del Tesoro Real - Monitoreo Windows\n");
     Config cfg;
     leerConfiguracion(&cfg);

@@ -26,7 +26,7 @@ void detectDrives()
         if (drives & (1 << i))
         {
             driveLetter[i] = 'A' + i;
-            printf("%c:\\ detectado.\n", driveLetter[i]);
+            printf("%c:\\ detected.\n", driveLetter[i]);
         }
     }    while (1)
     {
@@ -52,12 +52,12 @@ void detectDrives()
         {
             if (driveLetter[i] != 0 && driveletter2[i] == 0)
             {
-                printf("Unidad desconectada: %c:\\\n", driveLetter[i]);
+                printf("Drive disconnected: %c:\\\n", driveLetter[i]);
                 driveLetter[i] = 0;
             }
             else if (driveLetter[i] == 0 && driveletter2[i] != 0)
             {
-                printf("Nueva unidad conectada: %c:\\\n", driveletter2[i]);
+                printf("New drive connected: %c:\\\n", driveletter2[i]);
                 driveLetter[i] = driveletter2[i];
             }
         }
@@ -117,13 +117,13 @@ int findFile(File* array, int count, const char* path) {
 }
 
 void monitorUSB(const char* device) {
-    printf("Iniciando monitoreo: %s\n", device);
+    printf("Starting monitoring: %s\n", device);
     
     File* prevState = (File*)malloc(MAX_FILES * sizeof(File));
     File* currState = (File*)malloc(MAX_FILES * sizeof(File));
     
     if (!prevState || !currState) {
-        printf("Error de memoria\n");
+        printf("Memory error\n");
         return;
     }
     
@@ -135,7 +135,7 @@ void monitorUSB(const char* device) {
         prevState[i] = files[i];
     }
     
-    printf("Archivos iniciales: %d\n", prevCount);
+    printf("Initial files: %d\n", prevCount);
     
     while (1) {
         totalFiles = 0;
@@ -149,14 +149,14 @@ void monitorUSB(const char* device) {
         // Archivos eliminados
         for (int i = 0; i < prevCount; i++) {
             if (findFile(currState, currCount, prevState[i].path) == -1) {
-                printf("ELIMINADO: %s\n", prevState[i].path);
+                printf("DELETED: %s\n", prevState[i].path);
             }
         }
         
         // Archivos nuevos
         for (int i = 0; i < currCount; i++) {
             if (findFile(prevState, prevCount, currState[i].path) == -1) {
-                printf("NUEVO: %s\n", currState[i].path);
+                printf("NEW: %s\n", currState[i].path);
             }
         }
         
@@ -166,7 +166,7 @@ void monitorUSB(const char* device) {
             if (prevIndex != -1) {
                 if (currState[i].isFile && 
                     !compareTime(currState[i].lastModified, prevState[prevIndex].lastModified)) {
-                    printf("MODIFICADO: %s\n", currState[i].path);
+                    printf("MODIFIED: %s\n", currState[i].path);
                 }
             }
         }

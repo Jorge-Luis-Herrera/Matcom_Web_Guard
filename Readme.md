@@ -216,9 +216,9 @@ Educational use only. This project is designed for learning purposes and scienti
 
 ## 👥 Authors
 
-- **Jorge**: USB/Filesystem monitoring implementation
-- **Fabian**: Memory/Process monitoring system  
-- **Leo**: Network port scanner development
+- **Jorge Luis Herrera Cecilia**: USB/Filesystem monitoring implementation
+- **Fabian A Almeida Martinez**: Memory/Process monitoring system  
+- **Leonardo Peláez Ascención**: Network port scanner development
 
 ---
 

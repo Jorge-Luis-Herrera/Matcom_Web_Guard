@@ -183,7 +183,7 @@ void monitorUSB(const char* device) {
     free(currState);
 }
 
-int main()
+int j()
 {
     printf("Monitor de dispositivos USB\n");
     
